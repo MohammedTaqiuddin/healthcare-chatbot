@@ -1,0 +1,57 @@
+.page {
+    background-color: #f0f0f0;
+}
+
+.action-bar {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.chat-list {
+    background-color: #f0f0f0;
+}
+
+.message-container {
+    padding: 8;
+}
+
+.user-message {
+    background-color: #DCF8C6;
+    padding: 10;
+    margin: 5 50 5 10;
+    border-radius: 10;
+}
+
+.bot-message {
+    background-color: white;
+    padding: 10;
+    margin: 5 10 5 50;
+    border-radius: 10;
+}
+
+.message-text {
+    font-size: 16;
+    color: #333;
+}
+
+.input-container {
+    background-color: white;
+    padding: 10;
+    border-top-width: 1;
+    border-top-color: #ddd;
+}
+
+TextField {
+    background-color: #f8f8f8;
+    padding: 10;
+    margin-right: 8;
+    border-radius: 20;
+}
+
+.send-button {
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 20;
+    width: 80;
+    margin: 0;
+}

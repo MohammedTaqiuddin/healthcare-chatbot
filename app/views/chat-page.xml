@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo" class="page">
+    <ActionBar title="HealthCare Chatbot" class="action-bar" />
+    
+    <GridLayout rows="*, auto">
+        <ListView items="{{ messages }}" row="0" class="chat-list">
+            <ListView.itemTemplate>
+                <GridLayout columns="*" class="message-container">
+                    <StackLayout class="{{ isUser ? 'user-message' : 'bot-message' }}">
+                        <Label text="{{ text }}" textWrap="true" class="message-text" />
+                    </StackLayout>
+                </GridLayout>
+            </ListView.itemTemplate>
+        </ListView>
+        
+        <GridLayout rows="auto" columns="*, auto" row="1" class="input-container">
+            <TextField col="0" hint="Describe your symptoms..." text="{{ userInput }}" />
+            <Button col="1" text="Send" tap="{{ onSendTap }}" class="send-button" />
+        </GridLayout>
+    </GridLayout>
+</Page>
